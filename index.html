@@ -1,13 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="skrypcior.js"></script>
-</head>
-<body>
-    skypt
-</body>
-</html>
+<HTML>
+    <HEAD>
+        <TITLE>Test Input</TITLE>
+        <link rel="stylesheet" href="mystyle.css">
+        <SCRIPT src="myscript.js" LANGUAGE="JavaScript"></SCRIPT>
+    </HEAD>
+    <BODY>
+        <FORM NAME="calculatorForm" ACTION="" METHOD="GET">Enter something in the box: <BR>
+            <INPUT TYPE="text" NAME="inputbox" VALUE=""><P>
+            <INPUT TYPE="text" NAME="inputboxA" VALUE=""><P>
+            <input type="radio" name="funkcja" id="+"> Dodawanie <br>
+            <input type="radio" name="funkcja" id="-"> Odejmowanie <br>
+            <input type="radio" name="funkcja" id="*"> Mnożenie <br>
+            <input type="radio" name="funkcja" id=":"> Dzielenie <br>
+            <input type="radio" name="funkcja" id="log"> Logarytmowanie <br>
+            <input type="radio" name="funkcja" id="pow"> Potęgowanie <br>
+            <input type="radio" name="funkcja" id="/"> Modulo <br>
+
+            <INPUT TYPE="button" NAME="button" Value="Click" id="kalk" onClick="handleCalculatorForm(this.form)">
+        </FORM>
+        <div id="calcResult"></div>
+
+        <FORM NAME="palindromeForm" ACTION="" METHOD="GET">Enter something in the box: <BR>
+            <INPUT TYPE="text" NAME="inputbox2" VALUE=""><P>
+            <INPUT TYPE="button" NAME="button2" Value="Click" onClick="handlePalindromeForm(this.form)">
+        </FORM>
+        <div id="palindromeResult"></div>
+
+        <div>Drugi najwiekszy element w tablicy</div>
+        <FORM NAME="drugiForm" ACTION="" METHOD="GET">Enter something in the box: <BR>
+            <INPUT TYPE="text" NAME="inputbox5" VALUE=""><P>
+       
+            <INPUT TYPE="button" NAME="button4" Value="Click" onClick="handleDrugiForm(this.form)">
+        </FORM>
+        <div id="drugiResult"></div>
+
+        <div>Przedział (w konsoli)</div>
+        <FORM NAME="anagramForm" ACTION="" METHOD="GET">Enter something in the box: <BR>
+            <INPUT TYPE="text" NAME="inputbox3" VALUE=""><P>
+            <INPUT TYPE="text" NAME="inputbox4" VALUE=""><P></P>
+            <INPUT TYPE="button" NAME="button3" Value="Click" onClick="handleAnagramForm(this.form)">
+        </FORM>
+        <div id="anagramResult"></div>
+    </BODY>
+    </HTML>
