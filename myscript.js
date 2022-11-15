@@ -173,24 +173,28 @@ if(a<=b){
 }
 
 }
+liczby=[6,3,321,523,65];
 function drugi(arr){
+
+    arr=bubbleSort(arr);
+
 if(typeof arr[i]=="int"){
-    for(var i = 0; i < arr.length; i++){
-       
-        for(var j = 0; j < ( arr.length - i -1 ); j++){
-         
-            if(arr[j] > arr[j+1]){           
-                var temp = arr[j]
-                arr[j] = arr[j + 1]
-                arr[j+1] = temp
-            }
+    var1=arr[arr.length-1];
+  for(let i=arr.length-1;i>=0;i--){
+if(var1>arr[i]){
+var1=arr[i];
+break;
+}
+  }
         }
+        return var1;
+
     }
-    let last=arr[arr.length-2];
+    console.log(drugi(liczby));
 
     return last;
-}
-}
+
+
 console.log(recurse(1,5));
 console.log(0.2 + 0.1);
 console.log(fibonacci(5));
